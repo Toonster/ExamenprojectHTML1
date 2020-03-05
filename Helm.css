@@ -6,15 +6,14 @@ body {
     font-family: 'Poppins', sans-serif;
     background: rgb(31,40,51);
     background: radial-gradient(circle, rgba(31,40,51,1) 30%, rgba(11,12,16,1) 100%);
-    padding: 0;
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
 }
 
 .container {
     display: grid;
     height: 98vh;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-rows: auto auto 10vh;
     grid-template-areas: "header" "main" "footer"
 }
 
@@ -31,13 +30,12 @@ body {
     grid-area: footer;
 }
 
-/*.banner {
-    background-image: url("Images/T1lQAIC.jpg");
+.banner {
+    background-image: url("Images/lGizsxU.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100% 50vh;
-    height: 60vh;
-}*/
+    height: 30vh;
+}
 
 .logo {
 
@@ -46,6 +44,7 @@ body {
 .logo h1 {
     font-size: 4rem;
     font-weight: bold;
+    margin: 0;
 }
 
 h1,h2,h3 {
@@ -58,16 +57,16 @@ p {
 
 .menu {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     justify-content: space-around;
-    width: 50%;
     padding: 0;
 }
 
 .header-nav {
     border-bottom: solid 1px #73efe6;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: stretch;
     align-items: center;
 }
 
@@ -77,6 +76,10 @@ footer {
 
 nav ul li, p {
     color: #C5C6C7
+}
+
+nav ul li {
+    margin: 0 5px;
 }
 
 nav ul li.hover {
@@ -89,7 +92,6 @@ nav ul li.hover {
 }
 
 section {
-    margin: 0 auto;
 }
 
 footer p {
@@ -98,6 +100,17 @@ footer p {
 
 .main-title {
     display: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
 }
 
 /*1F2833*/

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Customize Helmet</title>
+    <link href="../Helm.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header-item">
+    <nav class="header-nav">
+        <h1 id="logo">Helmetic</h1>
+        <ul class="main-menu">
+            <li><a href="../Index.html">Home</a></li>
+            <li><a href="Helmets.html">Helmets <span>&#x25BE;</span></a>
+                <ul class="submenu">
+                    <li><a href="Racing.html">Racing</a>
+                    <li><a href="Rally.html">Rally</a>
+                    <li><a href="Kart.html">Karting</a>
+                </ul>
+            </li>
+            <li><a>Customize helmet</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="main-item">
+    <h2>Make it your own</h2>
+    <div class="customize-container">
+        <img id="customize-img" src="../Images/Bell%20GP3%20Carbon%20Full%20Face.jpg" alt="BellGP3"/>
+        <form class="customize-options">
+            <label for="size">Size</label>
+            <select id="size" name="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+            <label for="color">Color</label>
+            <input type="color" id="color" name="color" value="#ff0000"><br>
+            <label for="colortype">Color Type</label>
+            <select id="colortype" name="colortype">
+                <option value="Gloss ">Gloss (+€0.00)</option>
+                <option value="Matte ">Matte (+€10.00)</option>
+                <option value="Gradient ">Gradient (+€20.00)</option>
+                <option value="Pearlescent">Pearlescent (+€30.00)</option>
+                <option value="Flakes">Flakes (+€20.00)</option>
+            </select>
+            <label for="visor">Visor</label>
+            <select id="visor" name="visor">
+                <option value="araiPro">Arai Pro (+€80.00)</option>
+                <option value="Vas-V Type">Vas-V Type(+€129.00)</option>
+                <option value="offroad">Offroad Tinted(+€64.00)</option>
+                <option value="darkened">Regular darkened(+€20.00)</option>
+            </select>
+            <a href="https://www.bellracing.eu/assets/media/documents/paintforms/PF_HP7-duckbill.pdf" download>
+                <button id="download-btn">Download the design form</button>
+            </a>
+            <label for="designForm">Select a design form to upload</label>
+            <input type="file" id="designForm" name="designForm">
+            <input type="submit">
+        </form>
+    </div>
+    <table class="helmet-chart">
+        <h3>Helmet sizing chart</h3>
+        <tr>
+            <th>Helmet size</th>
+            <th>Hat size</th>
+            <th>Head circumference (cm)</th>
+        </tr>
+        <tr>
+            <td>XS</td>
+            <td>6 5/8 - 6 3/4</td>
+            <td>53-54</td>
+        </tr>
+        <tr>
+            <td>S</td>
+            <td>6 7/8 - 7</td>
+            <td>55-56</td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>7 1/8 - 7 1/4</td>
+            <td>57-58</td>
+        </tr>
+        <tr>
+            <td>L</td>
+            <td>7 3/8 - 7 1/2</td>
+            <td>59-60</td>
+        </tr>
+        <tr>
+            <td>XL</td>
+            <td>7 5/8 - 7 3/4</td>
+            <td>61-62</td>
+        </tr>
+    </table>
+</main>
+<footer class="footer-item">
+    <p>© Latsch Brent</p>
+    <nav>
+        <ul class="footer-menu">
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>

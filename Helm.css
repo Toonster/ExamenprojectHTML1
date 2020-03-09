@@ -4,7 +4,6 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: rgb(31, 40, 51);
     background: radial-gradient(circle, rgba(31, 40, 51, 1) 30%, rgba(11, 12, 16, 1) 100%);
     margin: 0;
     line-height: 2;
@@ -13,7 +12,7 @@ body {
 .container {
     display: grid;
     height: 98vh;
-    grid-template-rows: 1fr 1.5fr 7vh;
+    grid-template-rows: 1fr 2fr 4vh;
     grid-template-areas: "header" "main" "footer"
 }
 
@@ -23,6 +22,8 @@ body {
 
 .main-item {
     grid-area: main;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .footer-item {
@@ -30,7 +31,7 @@ body {
 }
 
 .hero {
-    min-height: 400px;
+    min-height: 200px;
     display: flex;
     align-items: center;
     background-image: linear-gradient(black, black), url("Images/lGizsxU.jpg");
@@ -56,7 +57,7 @@ body {
     font-style: italic;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4 {
     color: #73efe6;
 }
 
@@ -82,15 +83,26 @@ h1,h2,h3 {
     letter-spacing: 3px;
     width: 60%;
     flex-wrap: wrap;
+    padding: 0;
+    position: relative;
+}
+
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background: radial-gradient(circle, rgba(31, 40, 51, 1) 30%, rgba(11, 12, 16, 1) 100%);
+    display: none;
+}
+
+.main-menu li:hover .submenu {
+    display: block;
 }
 
 img {
     max-height: 100%;
     max-width: 100%;
-}
-
-footer {
-    border-top: solid 1px #73efe6;
 }
 
 nav ul li, p {
@@ -102,7 +114,7 @@ nav ul li a {
     color: #C5C6C7
 }
 
-nav ul li.hover {
+nav ul li a:hover {
     color: #73efe6;
     cursor: pointer;
 }
@@ -115,7 +127,7 @@ nav ul li.hover {
     display: none;
 }
 
-img {
+header img {
     filter: grayscale(100%);
 }
 
@@ -125,25 +137,237 @@ img {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "showcase what-we-do-top"
                             "showcase what-we-do-bot";
-    width: 72.5vw;
-    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
 }
 
 .showcase {
+    display: grid;
     grid-area: showcase;
-    padding-top: 4.9%;
+    align-content: center;
+    justify-content: center;
 }
 
 .what-we-do-top {
+    display: grid;
     grid-area: what-we-do-top;
+    margin: 0;
+    align-content: center;
+    justify-content: center;
 }
 
 .what-we-do-top h3, .what-we-do-bot h3 {
     font-size: 2rem;
+    margin: 0;
 }
 
 .what-we-do-bot {
+    display: grid;
     grid-area: what-we-do-bot;
+    align-content: center;
+    justify-content: center;
 }
 
-/*1F2833*/
+footer {
+    border-top: solid 1px #73efe6;
+    display: flex;
+    padding: 0 15vw;
+    justify-content: space-between;
+}
+
+.footer-menu {
+    display: flex;
+    list-style: none;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.img-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px 5px 5px 0;
+    margin: 0;
+}
+
+.gallery-item img {
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+    align-self: center;
+}
+
+.gallery-item:hover {
+    border: #73efe6 solid 1px;
+}
+
+.gallery-item h3, p {
+    margin: 0;
+}
+
+a[href^="mailto"]::before {
+    content: "📧 ";
+}
+
+a[href^="tel"]::before {
+    content: "📞 ";
+}
+
+address a{
+    text-decoration: none;
+    color: #C5C6C7;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input[type=text], select, textarea {
+    display: block;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+textarea {
+    width: 70%;
+}
+
+input[type=submit],#download-btn, input[type=file] {
+    background-color: #45A29E;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+input[type=submit]:hover {
+    background-color: #73efe6;
+}
+
+label[for] {
+    color: #73efe6;
+    font-weight: bold;
+}
+
+iframe {
+    min-width: 200px;
+}
+
+.invis {
+    display: none;
+}
+
+.faq-list {
+    list-style: none;
+    padding: 0;
+}
+
+.faq-list li {
+    width: 60%;
+    margin: 4% auto;
+}
+
+#artist img {
+    filter: grayscale(100%);
+}
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.breadcrumb li+li:before {
+    padding: 8px;
+    color: #C5C6C7;
+    content: "/\00a0";
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: #C5C6C7;
+}
+
+.breadcrumb li a:hover {
+    color: #73efe6;
+}
+
+.breadcrumb .active {
+    color: #73efe6;
+}
+
+#customize-img {
+    width: 50%;
+    height: auto;
+    grid-area: customize-img;
+}
+
+.helmet-chart {
+    color: #C5C6C7;
+    text-align: center;
+    width: 60%;
+    margin: 10px 0 30px 0;
+}
+
+.helmet-chart th {
+    text-decoration: underline;
+}
+
+.helmet-chart td, .helmet-chart th {
+    border: 1px solid;
+}
+
+#color {
+    width: 20%;
+}
+
+#colortype {
+    display: inline-block;
+}
+
+select#id option[value="araiPro"] {
+    background-image: url("Images/visorAraiPro.jpg");
+}
+select#id option[value="Vas-V Type"]{
+    background-image: url("Images/VisorVasV.jpg");
+}
+select#id option[value="offroad"]{
+    background-image: url("Images/OFFROAD-RMBW.jpg");
+}
+select#id option[value="darkened"] {
+    background-image: url("Images/visor.jpg");
+}
+
+.customize-options {
+    display: flex;
+    flex-direction: column;
+    grid-area: customize-options;
+}
+
+select, input[type=submit], input[type=file] {
+    width: 200px;
+}
+
+.customize-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-areas: "customize-img customize-options";
+}
+
+
+
+

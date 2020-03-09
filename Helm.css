@@ -64,6 +64,7 @@ h1,h2,h3,h4, #logo p {
 #logo {
     flex: 0;
     letter-spacing: 3px;
+    font-size: 2rem;
 
 }
 
@@ -134,28 +135,25 @@ header img {
 
 .what-we-do-container {
     display: grid;
-    flex-wrap: wrap;
-    flex-direction: row;
-    /*grid-template-columns: repeat(auto-fill, minmax(200px,1fr));*/
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "showcase what-we-do-top"
                             "showcase what-we-do-bot";
-    text-align: center;
+    align-items: center;
     justify-content: center;
+    grid-gap: 20px;
 }
 
 .showcase {
-    display: grid;
     grid-area: showcase;
 }
 
 .what-we-do-top {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-area: what-we-do-top;
-    margin: 0;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .what-we-do-top h3, .what-we-do-bot h3 {
@@ -164,24 +162,28 @@ header img {
 }
 
 .what-we-do-bot {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-area: what-we-do-bot;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
 }
 
 footer {
     border-top: solid 1px #73efe6;
     display: flex;
     padding: 0 15vw;
+    align-items: center;
     justify-content: space-between;
 }
 
 .footer-menu {
     display: flex;
     list-style: none;
-    width: 60%;
-    justify-content: space-between;
+    margin: 0;
+}
+
+.footer-menu li {
+    padding: 0 5px 0 5px;
 }
 
 .img-gallery {
@@ -344,19 +346,6 @@ iframe {
     display: inline-block;
 }
 
-select#id option[value="araiPro"] {
-    background-image: url("Images/visorAraiPro.jpg");
-}
-select#id option[value="Vas-V Type"]{
-    background-image: url("Images/VisorVasV.jpg");
-}
-select#id option[value="offroad"]{
-    background-image: url("Images/OFFROAD-RMBW.jpg");
-}
-select#id option[value="darkened"] {
-    background-image: url("Images/visor.jpg");
-}
-
 .customize-options {
     display: flex;
     flex-direction: column;
@@ -372,40 +361,55 @@ select, input[type=submit], input[type=file] {
 
 .customize-container {
     display: flex;
-    /*    grid-template-columns: repeat(2, minmax(200px, 1fr));
-        grid-template-areas: "customize-img customize-options";*/
 }
 
-@media (max-width: 44em) {
+.sale-table, .sale-table th , td {
+    border: #C5C6C7 1px solid;
+    color: #C5C6C7;
+}
+
+.sale-table {
+    letter-spacing: 1px;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+@media (max-width: 1350px) {
 
     .main-menu, .main-item {
         width: 100%;
     }
 
     .main-item {
-        padding: 20px;
+        padding: 0 1% 0 1%;
     }
 
     .what-we-do-container {
-        margin: 0 auto;
         grid-template-columns: auto;
+        grid-template-rows: 1fr auto 1fr;
         grid-template-areas: "what-we-do-top"
         "showcase" "what-we-do-bot";
     }
 }
 
-@media (max-width: 1350px) {
-    .faq-list li {
-    }
-
-    .main-menu {
-        width: 100%;
-    }
-}
-
 @media (max-width: 800px) {
+    #logo {
+        font-size: 20px;
+    }
     .header-nav, .main-menu {
         flex-direction: column;
+    }
+
+    .submenu {
+        position: relative;
     }
 
     .main-menu {
@@ -413,6 +417,17 @@ select, input[type=submit], input[type=file] {
     }
 
     .main-item h2, h3 {
+        text-align: center;
+    }
+
+    .main-menu li {
+        background-color: #1F2833;
+        border-radius: 5px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .helmets {
         text-align: center;
     }
 
@@ -425,8 +440,18 @@ select, input[type=submit], input[type=file] {
         flex-direction: column;
     }
 
-    #customize-img, .helmet-chart, label, select, input[type=submit], input[type=file], input[type=color], #download-btn, .header-nav {
+    #customize-img, .helmet-chart, label, select, input[type=submit], input[type=file], input[type=color], #download-btn, .header-nav, .contact-form input, .contact-form textarea {
         margin: 10px auto 10px auto;
+    }
+
+    .contact-container {
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact-form {
+        text-align: center;
     }
 }
 

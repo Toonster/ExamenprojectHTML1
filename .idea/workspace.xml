@@ -4,15 +4,14 @@
     <list default="true" id="9d839bc3-34c0-4cd7-aeb5-598a5d3f6eeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Helm.css" beforeDir="false" afterPath="$PROJECT_DIR$/Helm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/LH44.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/PUfWU7A.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/T1lQAIC.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/T1lQAIC_opt(1)(1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/T1lQAIC_opt(1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/esFbRqF.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/image_motorsports.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/lBzDyZd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/max-verstappen-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/Blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html/Blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/Contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html/Contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/Customize.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html/Customize.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/FAQ.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html/FAQ.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/Helmets.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html/Helmets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/Kart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html/Kart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/Racing.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html/Racing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/Rally.html" beforeDir="false" afterPath="$PROJECT_DIR$/Html/Rally.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +45,11 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\brent\User_Interfaces1\HTML5_CCS3\ExamenprojectHTML1\Images" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Index" type="JavascriptDebugType" uri="http://localhost:63342/ExamenProjectHTML1/Index.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -72,6 +76,10 @@
       <workItem from="1583676842250" duration="6656000" />
       <workItem from="1583688460871" duration="2746000" />
       <workItem from="1583693124096" duration="5395000" />
+      <workItem from="1583755870054" duration="2966000" />
+      <workItem from="1583764466760" duration="843000" />
+      <workItem from="1583765632769" duration="3148000" />
+      <workItem from="1583769784400" duration="1670000" />
     </task>
     <servers />
   </component>

@@ -59,17 +59,19 @@
             </select>
             <label for="visor">Visor</label>
             <select id="visor" name="visor">
+                <option value="included">Included (+€0.00)</option>
                 <option value="araiPro">Arai Pro (+€80.00)</option>
                 <option value="Vas-V Type">Vas-V Type(+€129.00)</option>
                 <option value="offroad">Offroad Tinted(+€64.00)</option>
                 <option value="darkened">Regular darkened(+€20.00)</option>
             </select>
-            <a href="https://www.bellracing.eu/assets/media/documents/paintforms/PF_HP7-duckbill.pdf" download>
-                <button id="download-btn">Download the design form</button>
+            <a href="../Images/Design_helmet_form.pdf" download="Design_form_helmet">
+                <button id="download-btn">Download design form</button>
             </a>
-            <label for="designForm">Select a design form to upload</label>
+            <label for="designForm">Upload design form</label>
             <input type="file" id="designForm" name="designForm">
-            <input type="submit">
+            <input type="submit" value="Order helmet">
+            <button id="order-btn" type="submit" name="submit" value="Order helmet"><a href="Confirmation.html"> </a>Order helmet</button>
         </form>
     </div>
     <table class="helmet-chart">

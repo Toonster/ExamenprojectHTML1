@@ -280,11 +280,6 @@ iframe {
     padding: 0;
 }
 
-/*.faq-list li {
-    width: 60%;
-    margin: 4% auto;
-}*/
-
 #artist {
     filter: grayscale(100%);
 }
@@ -382,6 +377,12 @@ select, input[type=submit], input[type=file] {
     text-align: center;
 }
 
+#order-btn {
+    height: 200px;
+    width: 200px;
+
+}
+
 @media (max-width: 1350px) {
 
     .main-menu, .main-item {
@@ -454,6 +455,8 @@ select, input[type=submit], input[type=file] {
         text-align: center;
     }
 }
+
+/* TEST TEST TEST */
 
 
 
